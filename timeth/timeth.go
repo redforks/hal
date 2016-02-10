@@ -64,5 +64,8 @@ func install() {
 
 // Mocked version of hal.Now
 func now() time.Time {
-	return current
+	l.Lock()
+	r := current
+	l.Unlock()
+	return r
 }
