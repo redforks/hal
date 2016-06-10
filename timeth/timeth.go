@@ -8,7 +8,7 @@
 package timeth
 
 import (
-	"spork/testing/reset"
+	"github.com/redforks/testing/reset"
 	"sync"
 	"time"
 

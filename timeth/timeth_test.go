@@ -1,8 +1,8 @@
 package timeth
 
 import (
+	"github.com/redforks/testing/reset"
 	"reflect"
-	"spork/testing/reset"
 	"time"
 
 	bdd "github.com/onsi/ginkgo"
