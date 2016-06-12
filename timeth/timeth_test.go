@@ -1,9 +1,10 @@
 package timeth
 
 import (
-	"github.com/redforks/testing/reset"
 	"reflect"
 	"time"
+
+	"github.com/redforks/testing/reset"
 
 	bdd "github.com/onsi/ginkgo"
 	"github.com/redforks/hal"

@@ -8,9 +8,10 @@
 package timeth
 
 import (
-	"github.com/redforks/testing/reset"
 	"sync"
 	"time"
+
+	"github.com/redforks/testing/reset"
 
 	"github.com/redforks/hal"
 )
