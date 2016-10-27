@@ -26,7 +26,6 @@ func init() {
 	reset.Register(nil, func() {
 		l.Lock()
 		current = time.Date(2016, 1, 1, 0, 0, 0, 0, time.Local)
-		hal.Now = time.Now
 		mocked = false
 		l.Unlock()
 	})

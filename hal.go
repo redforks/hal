@@ -8,6 +8,8 @@ package hal
 import (
 	"os"
 	"time"
+
+	"github.com/redforks/testing/reset"
 )
 
 var (
@@ -20,3 +22,11 @@ var (
 	// Getenv is alias of os.Getenv
 	Getenv = os.Getenv
 )
+
+func init() {
+	reset.Register(func() {
+		Exit = os.Exit
+		Now = time.Now
+		Getenv = os.Getenv
+	}, nil)
+}
