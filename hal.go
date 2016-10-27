@@ -16,4 +16,7 @@ var (
 
 	// Now is alias of time.Now
 	Now = time.Now
+
+	// Getenv is alias of os.Getenv
+	Getenv = os.Getenv
 )
