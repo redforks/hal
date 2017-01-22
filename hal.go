@@ -7,6 +7,7 @@ package hal
 
 import (
 	"os"
+	"os/user"
 	"time"
 
 	"github.com/redforks/testing/reset"
@@ -21,6 +22,9 @@ var (
 
 	// Getenv is alias of os.Getenv
 	Getenv = os.Getenv
+
+	// CurrentUser is alias of os/user.Current
+	CurrentUser = user.Current
 )
 
 func init() {
@@ -28,5 +32,6 @@ func init() {
 		Exit = os.Exit
 		Now = time.Now
 		Getenv = os.Getenv
+		CurrentUser = user.Current
 	}, nil)
 }
